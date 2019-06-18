@@ -1,0 +1,117 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+
+// ≥768px
++media-breakpoint-down(sm)
+
+// ≥576px
++media-breakpoint-down(xs)
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
+
+
+/*==========  Custom mobile  ==========*/
+
+
+
+@media (max-width: 1200px)
+    #why 
+        ul
+            padding-top: 0px    
+    #advantages 
+        .title
+            color: #fff
+            text-shadow: 1px 1px 0px black, 0 0 0.5em #6331ee    
+    .slider .slide
+        padding: 150px 150px
+    .callback_form_textarea
+        margin-left: 0
+        textarea 
+            width: 371px
+    .callback_form_inputs input
+        width: 100%
+
+@media (max-width: 992px)
+    #bonus 
+        .bonus_text
+            padding-top: 0        
+    
+@media (max-width: 767px)
+    .callback_form_submit_agree
+        margin-top: 20px
+    #why 
+        ul
+            padding-top: 50px
+    body
+        background: url(../img/bg-blue.png) center -650px no-repeat
+    #face 
+        h1
+            margin-top: 0
+            color: #000000
+    #advantages
+        .title
+            color: #000000
+            text-shadow: none 
+        .advantages_block
+            box-shadow: 0 0 60px #e5e5f1
+    .slider .slide        
+        padding: 109px 70px!important
+    .callback_form_submit
+        display: block
+
+@media (max-width: 560px)
+    .callback_form_textarea textarea 
+        width: 260px
+    .title 
+        font-size: 25px
+        line-height: 30px
+        margin-bottom: 25px
+    #bonus 
+        margin-top: 80px
+    .partner
+        padding: 15px
+        margin-bottom: 15px
+
+
+
+@media (max-width: 457px)
+    .button
+        padding: 15px 20px
+    header 
+        padding: 25px 0
+        .vk     
+            margin: 0
+    #face 
+        .button 
+            display: block
+            margin: auto
+            width: 200px
+            text-align: center
+
+
+              
+                
+
+    
+    

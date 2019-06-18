@@ -1,0 +1,377 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: #5934e9
+	color: #fff
+
+body
+	background: url("../img/bg-blue.png") center -507px no-repeat
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+.button
+	font-size: 15px
+	color: #ffffff
+	background: #dfc26a
+	display: inline-block
+	padding: 18px 20px
+	border-radius: 16px
+	font-weight: 700
+	&:hover
+		text-decoration: none
+		color: #ffffff
+header
+	padding: 50px 0
+	.logo
+		color: #ffffff
+		display: flex
+		flex-wrap: wrap
+		margin-top: 10px
+		justify-content: center
+		&:hover
+			text-decoration: none
+		span
+			font-size: 15px
+			display: inline-block
+			margin-left: 15px
+			line-height: 20px
+		img
+			height: 42px
+	.phone
+		font-size: 16px
+		color: #ffffff
+		font-weight: 700
+		&:hover
+			text-decoration: none
+	.vk
+		color: #ffffff
+		background: #4f2fd1
+		border-radius: 50%
+		font-size: 20px
+		display: inline-block
+		width: 40px
+		height: 40px
+		text-align: center
+		padding: 5px
+		margin: 0 10px
+#face
+	h1
+		color: #ffffff
+		font-size: 46px
+		font-weight: bold
+		line-height: 50px
+		margin-top: 150px
+	p
+		font-size: 16px
+		color: #b3b3c4
+		margin-top: 40px
+	.button
+		margin-top: 40px
+	img 
+		width: 100%
+#bonus
+	margin-top: 140px
+	img 
+		width: 100%
+	.bonus_text
+		padding-top: 100px
+.title
+	font-size: 46px
+	color: #000000
+	line-height: 50px
+	text-align: center
+	margin: auto
+	font-weight: 800
+	margin-bottom: 75px
+	width: 100%
+#tasks
+	margin-top: 70px
+.tasks_block
+	text-align: center
+	padding: 25px
+	b 
+		margin-bottom: 20px
+		display: block
+		font-size: 17px
+	p 
+		font-size: 16px
+	img 
+		display: block
+		margin: auto
+		padding-bottom: 32px
+#advantages
+	background: url(../img/bg-blue2.png) no-repeat top center
+	padding-top: 400px
+	padding-bottom: 130px
+	.advantages_block
+		padding: 35px
+		text-align: center
+		background: #fff
+		border-radius: 23px
+		margin-bottom: 40px
+		min-height: 346px
+		b 
+			font-size: 17px
+			display: block
+			margin-bottom: 10px
+		p 
+			margin: 0
+			font-size: 16px
+		.fa-check
+			background: #f3f5f8
+			color: #79bd30
+			border-radius: 50%
+			padding: 17px
+			font-size: 19px
+			display: block
+			width: 53px
+			margin: auto
+			height: 53px
+			margin-bottom: 25px
+		
+	.title
+		color: #ffffff
+.slider
+	.slide
+		height: 550px
+		text-align: center
+		padding: 195px 316px
+		h3 
+			font-size: 30px
+			font-weight: 900
+			margin-bottom: 50px
+#why
+	img
+		width: 100%
+	margin-top: -70px
+	ul
+		padding-left: 0
+		padding-top: 80px
+		li
+			list-style: none
+			font-size: 16px
+			font-weight: bold
+			margin-bottom: 30px
+#busines
+	.title
+		margin-top: 90px
+footer
+	background: url("../img/bg-footer.png") center -213px no-repeat			
+	padding-top: 100px
+.callback
+	position: relative
+	background: #5934e9
+	border-radius: 31px
+	box-shadow: 0px 1px 46px 0px rgba(109, 110, 218, 0.07)
+	text-shadow: 0px 1px 46px rgba(109, 110, 218, 0.07) 
+	margin-top: 110px
+	padding-left: 65px
+	padding-right: 65px
+	padding-top: 76px
+	padding-bottom: 70px
+	margin-bottom: 73px
+
+.callback_phone 
+	width: 395px
+	height: 522px
+	position: absolute
+	right: 90px
+	top: -35px
+	background: url('../images/iphone.png')
+
+.callback_header 
+  font-size: 46px
+  color: #ffffff
+  font-weight: bold
+  line-height: 0.913
+  margin-bottom: 55px
+
+.callback_form 
+	display: flex
+	flex-wrap: wrap
+
+.callback_form_inputs 
+	input 
+		display: block
+		width: 374px
+		height: 55px
+		border: none
+		border-radius: 28px
+		background-color: #f6f6f9
+		margin-bottom: 16px
+		padding-left: 82px
+		line-height: 55px
+		font-size: 15px
+		color: #1c1c1c
+		background-repeat: no-repeat
+		background-position: 25px 50%
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box 
+		box-sizing: border-box
+		padding-right: 60px
+
+.callback_form_inputs input[name="phone"] 
+	background-image: url('../img/icon_phone.png')
+
+.callback_form_inputs input[name="name"] 
+	background-image: url('../img/icon_contacts.png')
+
+.callback_form_textarea 
+	margin-left: 25px
+
+.callback_form_textarea textarea 
+	width: 640px
+	height: 126px
+	border: none
+	border-radius: 28px
+	background-color: #f6f6f9
+	font-size: 15px
+	color: #1c1c1c
+	padding-top: 21px
+	padding-left: 27px
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+.callback_form_inputs_input 
+	position: relative
+
+.callback_form_inputs_input span 
+	position: absolute
+	display: block
+	background: #fff
+	border-radius: 100%
+	width: 41px
+	height: 41px
+	line-height: 41px
+	top: 50%
+	margin-top: -20px
+	right: 11px
+
+.callback_form_inputs_input span:after 
+	position: absolute
+	top: 0
+	left: 0
+	width: 41px
+	height: 41px
+	content: '*'
+	text-align: center
+	line-height: 41px
+	font-size: 18px
+	color: rgb(160, 159, 176)
+
+.callback_form_submit 
+	margin-top: 36px
+	display: flex
+	.button
+		padding: 13px 35px
+		width: 210px
+		text-align: center
+		margin-right: 20px
+
+.callback_form_submit_button 
+	display: block
+	border-radius: 26px
+	width: 214px
+	height: 53px
+	text-align: center
+	line-height: 53px
+	margin-right: 22px
+	font-size: 15px
+	font-weight: bold
+	color: #fff
+	text-decoration: none
+	background: #507ab2
+
+.callback_form_submit_agree 
+  font-size: 14px
+  color: #b0b5c7
+  line-height: 1.571
+
+.callback_form_submit_agree input[type=checkbox] 
+	display: block
+	float: left
+	margin-top: 16px
+	margin-right: 14px
+
+.partner
+	padding: 45px
+	background: #ffffff
+	border-radius: 8px
+	text-align: center
+	box-shadow: 0 0 60px #e5e5f1
+	min-height: 174px
+	display: flex
+	justify-content: center
+	align-items: center
+	img
+		width: 100%
+
+.header_menu 
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  margin-top: 18px
+  padding: 0
+  justify-content: center
+
+.header_menu li 
+	padding-right: 15px
+	list-style: none
+
+.header_menu a 
+	font-size: 17px
+	font-weight: bold
+	text-decoration: none
+	color: #ffffff
+.header_menu a:hover, .header_menu li.active a 
+	color: #dfc26a
+
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto
+    bottom: 73px
+.bx-wrapper .bx-pager.bx-default-pager a
+	background: #d4d3dc
+	margin: 0 10px
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus
+    background: #5934e9
+.bx-wrapper .bx-prev
+    left: 35px
+    background: url(../img/arrows.png) no-repeat 10px 0px
+.bx-wrapper .bx-prev:hover, .bx-wrapper .bx-prev:focus
+    background-position: 10px 0px
+.bx-wrapper .bx-next
+    right: 35px
+    background: url(../img/arrows.png) no-repeat -15px 0px			 
+.bx-wrapper .bx-next:hover, .bx-wrapper .bx-next:focus
+    background-position: -15px 0
+
+@import "media" // Always at the end
